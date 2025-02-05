@@ -1,0 +1,275 @@
+/*This is the Style sheet for my website*/
+/*Youtube video width is 500px on PC and 240px on mobile btw*/
+
+/*Yes I know this is bad programing desgin and style but I dont care to make an indent for every { or } */
+@font-face {font-family: "alkaline-regular";src: url(../Webpage_Fonts/alkaline-regular-1.otf);}
+@font-face{font-family: "alkaline-caps-demi";src: url(../Webpage_Fonts/alkaline-caps-demi.otf);}
+@font-face{font-family: "new-roman-regular";src: url(../Webpage_Fonts/Code\ New\ Roman.otf);}
+@font-face{font-family: "new-roman-bold";src: url(../Webpage_Fonts/Code\ New\ Roman\ b.otf);}
+@font-face{font-family: "unispace-regular";src: url(../Webpage_Fonts/Unispace\ Rg.otf);}
+@font-face{font-family: "unispace-bold";src: url(../Webpage_Fonts/Unispace\ Bd.otf);}
+
+#font_unispace-bold{
+    font-family: "unispace-bold";
+}
+#font_alkaline-caps-demi{
+    font-family: "alkaline-caps-demi";
+}
+#new-roman-regular{
+    font-family: "new-roman-regular";
+}
+
+
+/*to fix weird margin and make everything flush in webpage :D*/
+*{
+    margin: 0%;
+}
+
+/*background repeating image*/
+.Main_body{
+    background-image: url('../Personal_Website_Repeating_Background.png');
+    background-size: 15%;
+    height: 100%;
+}
+
+/*Webpage Banner Properties*/
+.Webpage_Banner{
+    grid-area: 1/1/1/4 ;
+    height: 216px; 
+    width: 100%; 
+    background-image: url("../Works_Webpage/Animation_Works/Personal_Website_Banner.png");
+    margin: 0%;
+    padding: 0%;
+
+    
+}
+/*============================================================================================================*/
+/*Navigation bar Properties*/
+.navigation_bar{
+    grid-area: 2/1/2/4;
+    z-index: 2;
+    border: solid #ff8847;
+    border-width: 4px;
+    border-radius: 15px;
+    background-color: #0f4b4d;
+    margin-bottom: 5%;
+    height: 50px;
+
+    position: sticky;
+    top: 0px;
+}
+.navigation_bar_GridOrganizer{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    
+}
+.navigation_bar_content{
+    grid-area: 1/2;
+    height: 100%;
+    width: 500px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.web_nav_links{
+    text-decoration:none;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: ridge #0f4b4d;
+    border-radius: 10rem;
+    border-width: 5px;
+    background-color: #467C7E;
+    color: #f1f1e6;
+}
+/*============================================================================================================*/
+/*webpage sides*/
+.right_blinder{
+    grid-area: 3/1;
+    background-color: #f1f1e6;
+    filter: brightness(0.1);
+    opacity: 0.5;
+    height: 100%;
+}
+.left_blinder{
+    grid-area: 3/3;
+    background-color: #f1f1e6;
+    filter: brightness(0.1);
+    opacity: 0.5;
+    height: 100%;
+}
+/*Centeral Column Content*/
+.Grid_Organizer{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: 200px 50px 1fr;
+}
+.Content_Column{
+    grid-area: 3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+/*Undergrid Opacity for central column*/
+.Opacity_Background{
+    grid-area: 3/2;
+    z-index: -1;
+    background-color: antiquewhite;
+    min-width: 75%;
+    min-height: 100%;
+    opacity: 50%;
+    filter: brightness(0.5);
+}
+/*Grid section for quick images and works*/
+.Works_Webpage_FlexContaier{
+    margin-bottom: 4%;
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.Grid_title{
+    background-color: #467C7E;
+    border: solid #ff8847;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: #f1f1e6;
+    width: fit-content;
+
+    position: relative;
+    top: 2px;
+    padding-top: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 0%;
+}
+.Works_Webpage_Container{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border: solid #ff8847;
+    border-left: dotted #ff8847;
+    border-right: dotted #ff8847;
+    border-radius: 10px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 0%;
+
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    column-gap: 10px;
+    row-gap: 0px;
+}
+.Showcase_Organizer{
+    display: flex;
+    flex-direction: column;
+}
+.Showcase_holder{
+    background-color: #467C7E;
+    border-right: ridge #0f4b4d 10px;
+    border-bottom: ridge #0f4b4d 5px;
+    border-radius: 5%;
+    min-width: 90%;
+    max-height: 200px;
+    min-height: 175px;
+    margin: 0%;
+    padding: 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Showcase_holder_subtitle{
+    height: 40px;
+    width: 93%;
+    padding-top: 10px;
+
+    border-right: ridge #f1f1e6 10px;
+    border-bottom: ridge #f1f1e6 5px;
+    border-radius: 5px;
+
+    background-color: #f1f1e6;
+    color: #0f4b4d;
+    position: relative;
+    bottom: 10px;
+    left: 4%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+/*custom page break because <hr/> doesnt work*/
+.linebreak{
+    border-top: solid #ff8847;
+    width: 100%;
+    margin: 1%;
+}
+
+/*Image resize because the gif files are f**king huge otherwise*/
+#image_resize{
+    width: 95%;
+    height: 90%;
+    margin: 0%;
+    padding: 0%;
+}
+/*============================================================================================================*/
+/*Second Flex-Grid-Container*/
+.Works_Webpage_Container_2{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border: solid #ff8847;
+    border-left: dotted #ff8847;
+    border-right: dotted #ff8847;
+    border-radius: 10px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 0%;
+
+    width: fit-content;
+    position: relative;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    column-gap: 0px;
+    row-gap: 0px;
+}
+.Showcase_organizer_2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+}
+.Showcase_holder_2{
+    background-color: #467C7E;
+    border-right: ridge #0f4b4d 10px;
+    border-bottom: ridge #0f4b4d 5px;
+    border-radius: 5%;
+    min-width: 90%;
+    max-height: 200px;
+    min-height: 250px;
+    margin: 0%;
+    padding: 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

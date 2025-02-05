@@ -1,0 +1,15 @@
+@media (max-width: 950px){
+
+    .Webpage_Banner{
+        background: url("../Works_Webpage/Animation_Works/Personal_Website_Banner_Mobile.png");
+        background-position: center;
+    }
+    .container_meDescription{
+        width: fit-content;
+        height: 50%;
+        align-items: center;
+    }
+    .img-scale-fix{
+        height: 70%;
+    }
+}

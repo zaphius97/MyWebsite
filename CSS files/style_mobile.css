@@ -1,0 +1,22 @@
+@media (max-width: 950px){
+
+    .Webpage_Banner{
+        background: url("../Works_Webpage/Animation_Works/Personal_Website_Banner_Mobile.png");
+        background-position: center;
+    }
+    .Content_Column{
+        margin-bottom: 15%;
+    }
+
+    .HomePage_FlexContaier{
+        margin: 5%;
+        height: fit-content;
+    }
+    .HomePage_GridContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .Showcase_holder_subtitle{
+        font-size: 75%;
+    }
+}

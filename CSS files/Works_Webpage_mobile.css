@@ -1,0 +1,34 @@
+@media (max-width: 950px){
+
+    .Webpage_Banner{
+        background: url("../Works_Webpage/Animation_Works/Personal_Website_Banner_Mobile.png");
+        background-position: center;
+    }
+    .Content_Column{
+        margin-bottom: 15%;
+    }
+
+    .HomePage_FlexContaier{
+        margin: 5%;
+        height: fit-content;
+    }
+    .Works_Webpage_Container{
+        width: 95%;
+        height: 10rem;
+        background-image: url("../Works_Webpage/Animation_Works/Personal_Website_Table-not-avaiable_.png");
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .Showcase_Organizer{
+        display: none;
+    }
+    .Showcase_holder_2{
+        min-height: fit-content;
+        padding: 2%;
+    }
+    .Showcase_holder_subtitle{
+        width: 90%;
+        font-size: 75%;
+    }
+}
